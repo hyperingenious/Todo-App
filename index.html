@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <script src="main.js" defer></script>
+</head>     
+<style>
+    .content_inserter{
+        width: 250px;
+       height: 50px;
+        border-radius: 10px;
+        margin: 10px 10px;
+        background: hsl(305, 100%, 57%);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .content{
+        width: 300px;
+        height: 50px;
+        border-radius: 10px;
+        margin: 10px 10px;
+        background: rgb(46, 46, 46);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <form class="content_inserter">
+        <input type="text" name="" id="text_input">
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    <div class="content">
+        <input type="text" name="" id="text">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+    </div>
+</body>
+</html>
