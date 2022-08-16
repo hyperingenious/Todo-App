@@ -9,12 +9,29 @@
     <script src="main.js" defer></script>
 </head>
 <style>
-    /* body {
+    body {
         background: rgb(34, 34, 34);
-    } */
-#text{
-    color: white;
-}
+    }
+
+    .text {
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+        width: 100%;
+        line-height: 25px;
+        background: rgb(46, 46, 46);
+        outline: none;
+        border: none;
+        font-family: sans-serif;
+    }
+
+
+    #text_input {
+        border: none;
+        border-radius: 3px;
+        border: 1px solid pink;
+        outline: none;
+    }
+
     .content_inserter {
         width: 250px;
         height: 50px;
@@ -28,15 +45,16 @@
     }
 
     .content {
-        width: 300px;
-        height: 50px;
-        border-radius: 10px;
-        margin: 10px 10px;
-        background: rgb(46, 46, 46);
-        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: fit-content;
+        border-radius: 10px;
+        margin: 10px 19px;
+        background: rgb(46, 46, 46);
+        padding: 10px 10px;
     }
 </style>
 
@@ -52,11 +70,11 @@
 
     <div class="kontent">
 
-<!-- 
-        <div class="content">
+
+        <!-- <div class="content">
 
 
-            <div id="text"></div>
+            <input type="text" name="" class="text" readonly>
             <div class="buttons">
 
                 <button class="edit">
@@ -69,7 +87,7 @@
             </div> -->
 
 
-        </div>
+    </div>
     </div>
 </body>
 
