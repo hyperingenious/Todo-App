@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+* {
+  font-family: "Open sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+.forms .content_inserter {
+  padding: 0px 10px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  box-shadow: 0px 0px 10px 3px rgb(219, 219, 219);
+  border-radius: 10px;
+}
+.forms .content_inserter #text_input {
+  outline: none;
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  font-size: 1.12rem;
+  color: rgb(53, 53, 53);
+  font-weight: 600;
+}
+.forms .content_inserter #submit {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 88px;
+  height: 40px;
+  color: rgb(126, 126, 126);
+  border: none;
+  box-shadow: -2px 0px 12px 2px rgb(219, 219, 219);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+}
+.forms .content_inserter #submit:hover {
+  box-shadow: -2px 0px 15px 5px rgb(219, 219, 219);
+}/*# sourceMappingURL=style.css.map */

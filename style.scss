@@ -1,0 +1,62 @@
+// Variable
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+$bg-theme: rgb(255, 255, 255);
+$globall-radius: 10px;
+$shadow: 0px 0px 42px 8px rgb(219 219 219);
+$shadow-2:-2px 0px 12px 2px rgb(219 219 219);
+$shadow-2-hover:-2px 0px 15px 5px rgb(219 219 219);
+$ani:0.1s ease-in-out;
+@mixin center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+*{
+    font-family: 'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: $bg-theme;
+}   
+.forms {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+  .content_inserter {
+    padding: 0px 10px;
+    width: 500px;
+    @include center;
+    height: 55px;
+    box-shadow: 0px 0px 10px 3px rgb(219 219 219);
+    border-radius: 10px;
+    #text_input{
+        outline: none;
+        width: 300px;
+        height: fit-content;
+        border: none;
+        font-size: 1.12rem;
+        color: rgb(53, 53, 53);
+        font-weight: 600;
+    }
+    #submit {
+        font-size: 1.1rem;
+        font-weight: 600;
+      width: 88px;
+      height: 40px;
+      color: rgb(126, 126, 126);
+      border: none;
+      box-shadow: $shadow-2;
+      border-radius: $globall-radius;
+      background-color: $bg-theme;
+      transition: $ani;
+      &:hover{
+        box-shadow:$shadow-2-hover;
+      }
+     
+    }
+    
+  }
+}

@@ -7,69 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body {
-        background: rgb(34, 34, 34);
-    }
-
-    .text {
-        letter-spacing: 1px;
-        font-size: 1.3rem;
-        width: 100%;
-        line-height: 25px;
-        background: rgb(46, 46, 46);
-        outline: none;
-        border: none;
-        font-family: sans-serif;
-    }
-
-
-    #text_input {
-        border: none;
-        border-radius: 3px;
-        border: 1px solid pink;
-        outline: none;
-    }
-
-    .content_inserter {
-        width: 250px;
-        height: 50px;
-        border-radius: 10px;
-        margin: 10px 10px;
-        background: hsl(305, 100%, 57%);
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 300px;
-        height: fit-content;
-        border-radius: 10px;
-        margin: 10px 19px;
-        background: rgb(46, 46, 46);
-        padding: 10px 10px;
-    }
-</style>
 
 <body>
-    <form class="content_inserter">
-        <input type="text" name="" id="text_input">
-        <input type="submit" id="submit" value="Submit">
-    </form>
+    <div class="forms">
+        <form class="content_inserter">
+            <input type="text" name="" placeholder="Take a note . . ." id="text_input">
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
 
 
 
 
 
     <div class="kontent">
-
 
         <!-- <div class="content">
 

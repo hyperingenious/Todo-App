@@ -64,17 +64,12 @@ window.addEventListener('load', () => {
         inserter_text_adder.value = '';
     })
 })
+/*
 let colorValue = 0;
 setInterval(() => {
     let lelo = document.querySelectorAll('.text');
     if(colorValue<=360){
         colorValue++;
-//         boxes.forEach(box => {
-//   box.style.backgroundColor = 'purple';
-//   box.style.width = '300px';
-
-// });
-
 lelo.forEach((e)=>{
     e.style.color = `hsl(${colorValue},100%,57%)`;
 })
@@ -85,3 +80,21 @@ lelo.forEach((e)=>{
         }
     }
 }, 30);
+*/
+
+let colorValue = 0;
+setInterval(() => {
+    let lelo = document.querySelector('.content_inserter');
+    if(colorValue<=360){
+        colorValue++;
+        lelo.style.boxShadow = `hsl(${colorValue},100%,57%) 0px 0px 10px 3px`;
+// lelo.forEach((e)=>{
+// })
+        // lelo[0].style.color = `hsl(${colorValue},100%,57%)`
+      console.log(colorValue);
+        if (colorValue>=360) {
+            colorValue = 0
+        }
+    }
+}, 30);
+
