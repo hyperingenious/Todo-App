@@ -17,7 +17,6 @@ window.addEventListener('load', () => {
             console.log('Enter Something')
         }
         else {
-            console.log('helljo');
             const theContent = document.createElement('div')
             theContent.classList.add('content')
 
@@ -45,24 +44,29 @@ window.addEventListener('load', () => {
             the_delete.addEventListener('click', () => {
                 addedContent.removeChild(theContent)
             })
+            
+        the_edit.addEventListener('click', () => {
+            if (the_edit.innerText == "Save") {
+                the_ultimate_text.setAttribute('readonly', 'readonly')
+                the_edit.innerText = 'Edit'
+            }
+            else if (the_edit.innerText == 'Edit') {
+                the_ultimate_text.removeAttribute('readonly')
+                the_ultimate_text.focus()
+                the_edit.innerText = "Save"
+            }
+        })
+        //Local storage work
+        
+    }
+    const sex = document.querySelector('.text')
+    if (sex.value == true) { 
+        localStorage.setItem('note', JSON.stringify(theContent));
+        console.log('namstey');
+}
 
-            the_edit.addEventListener('click', () => {
-                if (the_edit.innerText == "Save") {
-                    the_ultimate_text.setAttribute('readonly', 'readonly')
-                    the_edit.innerText = 'Edit'
-                }
-                else if (the_edit.innerText == 'Edit') {
-                        the_ultimate_text.removeAttribute('readonly')
-                        the_ultimate_text.focus()
-                        the_edit.innerText = "Save"
-                }
-            })
-
-
-
-        }
         inserter_text_adder.value = '';
-    })
+})
 })
 /*
 let colorValue = 0;
@@ -85,14 +89,14 @@ lelo.forEach((e)=>{
 let colorValue = 0;
 setInterval(() => {
     let lelo = document.querySelector('.content_inserter');
-    if(colorValue<=360){
+    if (colorValue <= 360) {
         colorValue++;
         lelo.style.boxShadow = `hsl(${colorValue},100%,57%) 0px 0px 10px 3px`;
-// lelo.forEach((e)=>{
-// })
+        // lelo.forEach((e)=>{
+        // })
         // lelo[0].style.color = `hsl(${colorValue},100%,57%)`
-      console.log(colorValue);
-        if (colorValue>=360) {
+        //   console.log(colorValue);
+        if (colorValue >= 360) {
             colorValue = 0
         }
     }
